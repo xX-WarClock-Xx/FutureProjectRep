@@ -1,12 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Собачий Офис — Лонгрид</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+
+    <header class="folder-nav-container">
+        <nav class="folder-tabs">
+            <a href="#intro" class="tab tab-grey">01. Обзор</a>
+            <a href="#team" class="tab tab-pink">02. Команда</a>
+            <a href="#schedule" class="tab tab-red">03. Распорядок</a>
+            <a href="#docs" class="tab tab-brown">04. Документы</a>
+            <a href="#boss" class="tab tab-black">05. Руководство</a>
+        </nav>
+    </header>
+
+    <main class="longread-container">
+
+        <div class="decor-paw paw-1">🐾</div>
+        <div class="decor-paw paw-2">🐾</div>
+        <div class="decor-paw paw-3">🐾</div>
+        <div class="decor-star star-1">★</div>
+        <div class="decor-spark spark-1">⚡</div>
+
+        <section id="intro" class="folder-card card-grey">
+            <div class="card-header">
+                <span class="folder-tag">ФАЙЛ №01 / ВВЕДЕНИЕ</span>
+                <span class="status-badge">АКТИВЕН</span>
+            </div>
+            <div class="card-content">
+                <div class="text-block">
+                    <h1>Собачий Офис</h1>
+                    <p class="subtitle">Рабочие будни наших четырёхногих коллег</p>
+                    <p>Добро пожаловать во внутренний архив корпорации. Здесь каждый сотрудник получает персональную миску, регулярные перерывы на поглаживания и эргономичное кресло.</p>
+                </div>
+                <div class="image-block">
+                    <img src="assets/hero-desk.svg" alt="Рабочее место собаки">
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="folder-card card-pink">
+            <div class="card-header">
+                <span class="folder-tag">ФАЙЛ №02 / СОТРУДНИКИ</span>
+                <span class="status-badge">В СЕТИ</span>
+            </div>
+            <div class="card-content alt-layout">
+                <div class="text-block">
+                    <h2>Наши Специалисты</h2>
+                    <p>Каждый отдел укомплектован высококлассными профессионалами с отличным нюхом на успех:</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="assets/corgi-boss.svg" alt="Корги Разработчик">
+                        </div>
+                        <h3>Корги-разработчик</h3>
+                        <p class="role">Senior Paw Engineer</p>
+                        <p>Пишет чистый код без багов, за каждый коммит получает вкусняшку.</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="assets/hero-desk.svg" alt="Такса Техподдержка">
+                        </div>
+                        <h3>Такса-специалист</h3>
+                        <p class="role">Head of Support</p>
+                        <p>Всегда на связи в гарнитуре, принимает звонки и оперативно решает любые вопросы.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="folder-card card-red">
+            <div class="card-header">
+                <span class="folder-tag">ФАЙЛ №03 / РАСПОРЯДОК</span>
+                <span class="status-badge">СТАНДАРТ</span>
+            </div>
+            <div class="card-content alt-layout">
+                <div class="text-block">
+                    <h2>Типичный рабочий день</h2>
+                    <ul class="schedule-list">
+                        <li><strong>09:00</strong> — Утренний гав-митинг и кофе с печеньем в форме косточки.</li>
+                        <li><strong>11:30</strong> — Проверка почты и важный лай на курьера.</li>
+                        <li><strong>13:00</strong> — Обед и тихий час под рабочим столом.</li>
+                        <li><strong>16:00</strong> — Командный бег по коридору за мячиком.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="folder-card card-brown">
+            <div class="card-header">
+                <span class="folder-tag">ФАЙЛ №04 / ДОКУМЕНТООБОРОТ</span>
+                <span class="status-badge">ВАЖНО</span>
+            </div>
+            <div class="card-content">
+                <div class="text-block">
+                    <h2>Отдел Отчётов</h2>
+                    <p>Все годовые отчёты, договоры и акты сдачи-приёмки тщательно проверяются на прочность. Отдел строго следит за соблюдением стандартов лапопожатий.</p>
+                </div>
+                <div class="image-block">
+                    <img src="assets/folder-stack.svg" alt="Стопка папок">
+                </div>
+            </div>
+        </section>
+
+        <section id="boss" class="folder-card card-black">
+            <div class="card-header">
+                <span class="folder-tag">ФАЙЛ №05 / РУКОВОДСТВО</span>
+                <span class="status-badge">СЕКРЕТНО</span>
+            </div>
+            <div class="card-content">
+                <div class="text-block">
+                    <h2>Генеральный Директор</h2>
+                    <p>Корги Коргич — строгий, но справедливый руководитель. Все ключевые решения принимаются строго после поглаживания за ушком.</p>
+                </div>
+                <div class="image-block">
+                    <img src="assets/corgi-boss.svg" alt="Корги начальник">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Студенческий проект • Собачий Офис • 2026</p>
+    </footer>
+
 </body>
 </html>
