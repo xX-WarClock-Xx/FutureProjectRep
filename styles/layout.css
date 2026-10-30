@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 :root {
     --color-grey: #a6a8ab;
@@ -9,6 +12,10 @@
     --color-bg-red: #ff4757;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-bg-red);
     color: var(--color-black);
@@ -18,6 +25,18 @@ body {
     align-items: center;
     position: relative;
     overflow-x: hidden;
+    line-height: 1.5;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .folder-nav-container {
@@ -32,7 +51,7 @@ body {
 .folder-tabs {
     display: flex;
     gap: 4px;
-    background-color: gray;
+    background: rgba(0, 0, 0, 0.85);
     padding: 8px 8px 8px 8px;
     border-radius: 12px 12px 12px 12px;
 }
@@ -43,7 +62,7 @@ body {
     text-align: center;
     font-size: 11px;
     font-weight: bold;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 8px 8px;
     color: var(--color-white);
     transition: transform 0.2s ease;
     white-space: nowrap;
@@ -160,6 +179,7 @@ body {
 .team-card h3 {
     font-size: 16px;
     margin-bottom: 4px;
+    font-weight: bold;
 }
 
 .team-card .role {
@@ -174,13 +194,15 @@ body {
     font-size: 12px;
 }
 
-h1 { font-size: 32px; margin-bottom: 8px; }
-h2 { font-size: 24px; margin-bottom: 12px; }
+h1 { font-size: 32px; margin-bottom: 8px; font-weight: bold; }
+h2 { font-size: 24px; margin-bottom: 12px; font-weight: bold; }
+p { font-size: 14px; }
 .subtitle { font-weight: bold; margin-bottom: 12px; opacity: 0.9; }
 
 .schedule-list li {
     padding: 10px 0;
     border-bottom: 1px dashed rgba(0,0,0,0.2);
+    font-size: 14px;
 }
 
 .image-block img {
